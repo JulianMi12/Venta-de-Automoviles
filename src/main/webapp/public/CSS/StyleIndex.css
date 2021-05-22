@@ -119,7 +119,6 @@ form .grid-1 {
 }
 
 .area {
-    min-width: 500px;
     min-height: 150px;
     resize: none;
 }
@@ -181,6 +180,18 @@ form .grid-1 {
         flex-wrap: wrap;
         font-size: 15px;
         text-align: left;
+    }
+}
+
+@media only screen and (min-width:750px) {
+    .area {
+        min-width: 500px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .area {
+        min-width: 250px;
     }
 }
 
